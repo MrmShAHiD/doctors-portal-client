@@ -1,22 +1,24 @@
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
-import Home from './Components/Home/Home/Home';
-import NavBar from './Components/Home/NavBar/NavBar';
+import HosHome from './Components/HosHome/HosHome/HosHome';
+import NavBar from './Components/HosHome/NavBar/NavBar';
+import AppHome from './Components/AppHome/AppHome/AppHome/AppHome';
 
 function App() {
   return (
     <Router>
-      <NavBar/>
       <Switch>
         <Route exact path="/">
-          <Home/>
+          <HosHome/>
         </Route>
         <Route path="/home">
-          <Home/>
+          <HosHome/>
+        </Route>
+        <Route path="/appHome">
+          <AppHome/>
         </Route>
       </Switch>
     </Router>
