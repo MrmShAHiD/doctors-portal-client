@@ -1,0 +1,92 @@
+.navBar{
+    background-color: rgb(164, 209, 205);
+}
+
+.logo {
+    width: 200px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0px 10px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.navbar-nav .nav-item .nav-link:hover {}
+
+.navbar-nav .nav-item .button {
+    color: #fff;
+    padding: 8px 25px;
+    border: 2px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+
+.navbar-nav .nav-item .button:hover {
+    background-color: transparent;
+    border: 2px solid #21B573;
+}
+
+.navbar-nav .nav-item .button:hover {}
+
+
+/* mega menu css part */
+
+.dropdown-menu {
+    display: block;
+    visibility: hidden;
+    transform: translateY( 60px);
+    opacity: 0;
+    border: transparent!important;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s cubic-bezier(0, 0, 0.39, 0.69);
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY( 0px);
+}
+
+.dropdown.megamenu .dropdown-menu {
+    width: calc(50% - 60px);
+    left: 50%;
+    transform: translate(-50%, 60px);
+}
+
+.dropdown.megamenu:hover .dropdown-menu {
+    transform: translate(-50%, 0px);
+    padding: 30px;
+    border-radius: 36px;
+}
+
+.megamenu {
+    position: static;
+}
+
+.dropdown.megamenu .dropdown-menu .col-xl ul li,
+.dropdown .dropdown-menu a {
+    color: #000000;
+    transition: 0.2s ease-in-out;
+}
+
+.dropdown.megamenu .dropdown-menu .col-xl ul li:hover,
+.dropdown .dropdown-menu a:hover {
+    color: #FD511A;
+}
+
+.dropdown .dropdown-menu a i {
+    transition: 0.2s ease-in-out;
+}
+
+.dropdown .dropdown-menu a:hover i {
+    transform: rotate(20deg);
+}
+
+.megamenu h4 {
+    color: #413960;
+    margin-bottom: 20px;
+}
